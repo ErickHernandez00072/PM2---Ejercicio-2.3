@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFAudioRecorderApp.MainPage">
+
+    <StackLayout>
+        <Image Source="https://www.uth.hn/wp-content/uploads/2019/12/logo-1.png"
+         HeightRequest="200"
+         WidthRequest="600"
+         HorizontalOptions="CenterAndExpand"
+         Aspect="Fill"/>
+        <Frame BackgroundColor="Green" Padding="24" CornerRadius="0">
+            <Label Text="Grabadora de audio" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Button Text="Iniciar/Detener Audio" TextColor="White" Clicked="Button_Clicked" CornerRadius="60" BackgroundColor   ="Green"/>
+
+        <Entry x:Name="txtDescripcion" Placeholder="Descripcion" />
+
+        <Button x:Name="saveAudio" Text="Guardar audio" TextColor="White" Clicked="saveAudio_Clicked" CornerRadius="60" BackgroundColor   ="Green"/>
+
+        <Button x:Name="btnShowAudioList" Text="Lista Audios" TextColor="White" Clicked="btnShowAudioList_Clicked" CornerRadius="60" BackgroundColor   ="Green"/>
+
+        <Button x:Name="btnSalir" Text="Salir" TextColor="White" Clicked="btnSalir_Clicked" CornerRadius="60" BackgroundColor   ="Green"/>
+
+    </StackLayout>
+
+</ContentPage>
